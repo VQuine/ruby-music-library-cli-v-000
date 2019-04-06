@@ -14,7 +14,7 @@ class MusicLibraryController
   def call
 
   #  4.times { user_response = gets.strip unless user_response == "exit" }
-    # user_response = ""
+    user_response = ""
 
 
     while user_response != "exit"

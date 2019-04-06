@@ -30,9 +30,6 @@ class MusicLibraryController
       puts "To quit, type 'exit'."
       puts "What would you like to do?"
 
-
-
-
       user_response = gets.strip
      case user_response # use a CASE statement - <-- checks VARIABLE for its VALUE & responds accordingly - more elegant than IF/ELSE
       when "list songs" # begin the pattern of VARIABLE checking - same as IF VARIABLE == "VALUE"...etc.

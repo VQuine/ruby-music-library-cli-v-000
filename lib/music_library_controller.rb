@@ -23,10 +23,10 @@ class MusicLibraryController
     puts "What would you like to do?"
   #  4.times { user_response = gets.strip unless user_response == "exit" }
     user_response = gets.strip
-    counter = 0
+    
 
     loop do
-        counter += 1
+        
 
      case user_response # use a CASE statement - <-- checks VARIABLE for its VALUE & responds accordingly - more elegant than IF/ELSE
       when "list songs" # begin the pattern of VARIABLE checking - same as IF VARIABLE == "VALUE"...etc.
@@ -43,7 +43,7 @@ class MusicLibraryController
         play_song
       end
 
-      break if counter == 4 || user_response == "exit"
+      break if user_response == "exit"
 
     end
 

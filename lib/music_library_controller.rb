@@ -89,7 +89,6 @@ class MusicLibraryController
      else
        nil
      end
-
    end
 
    def list_songs_by_genre
@@ -106,7 +105,6 @@ class MusicLibraryController
       else
         nil
       end
-
    end
 
    def play_song
@@ -123,7 +121,6 @@ class MusicLibraryController
      else
        nil
      end
-
    end
 
 end

@@ -12,7 +12,7 @@ class MusicLibraryController
   end
 
   def call
-  
+
   #  4.times { user_response = gets.strip unless user_response == "exit" }
     # user_response = ""
 
@@ -30,7 +30,7 @@ class MusicLibraryController
 
 
 
-      
+
       user_response = gets.strip
      case user_response # use a CASE statement - <-- checks VARIABLE for its VALUE & responds accordingly - more elegant than IF/ELSE
       when "list songs" # begin the pattern of VARIABLE checking - same as IF VARIABLE == "VALUE"...etc.

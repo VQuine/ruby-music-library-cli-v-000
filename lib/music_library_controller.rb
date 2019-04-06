@@ -9,7 +9,7 @@ class MusicLibraryController
     importer_object = MusicImporter.new(path)
     importer_object.import
 
-    call
+    
 
   end
 

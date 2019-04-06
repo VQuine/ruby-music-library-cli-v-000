@@ -22,12 +22,11 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
   #  4.times { user_response = gets.strip unless user_response == "exit" }
-    user_response = gets.strip
+    user_response = []
 
 
-    loop do
-
-
+    while user_response != "exit"
+      user_response = gets.strip
      case user_response # use a CASE statement - <-- checks VARIABLE for its VALUE & responds accordingly - more elegant than IF/ELSE
       when "list songs" # begin the pattern of VARIABLE checking - same as IF VARIABLE == "VALUE"...etc.
         list_songs # this is the BLOCK that gets executed if the specific CASE of variable checking evaluates TRUTHY
@@ -43,8 +42,7 @@ class MusicLibraryController
         play_song
       end
 
-      break if user_response == "exit"
-
+      
     end
 
   end

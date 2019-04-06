@@ -8,17 +8,12 @@ class MusicLibraryController
 
     importer_object = MusicImporter.new(path)
     importer_object.import
-
-
-
   end
 
   def call
     puts "Welcome to your music library!"
-  #  4.times { user_response = gets.strip unless user_response == "exit" }
     user_response = ""
-
-
+      
     while user_response != "exit"
 
       puts "To list all of your songs, enter 'list songs'."
@@ -31,6 +26,7 @@ class MusicLibraryController
       puts "What would you like to do?"
 
       user_response = gets.strip
+      
      case user_response # use a CASE statement - <-- checks VARIABLE for its VALUE & responds accordingly - more elegant than IF/ELSE
       when "list songs" # begin the pattern of VARIABLE checking - same as IF VARIABLE == "VALUE"...etc.
         list_songs # this is the BLOCK that gets executed if the specific CASE of variable checking evaluates TRUTHY
@@ -44,11 +40,9 @@ class MusicLibraryController
         list_songs_by_genre
       when "play song"
         play_song
-      end
-
+     end
 
     end
-
   end
 
   def list_songs
